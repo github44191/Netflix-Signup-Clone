@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+@media screen and (max-width:599px) {
+  body {
+    background-color: black;
+  }
+  header {
+    display: flex;
+    margin-left: 1rem;
+  }
+  .header-logo {
+    width: 7rem;
+  }
+  .container {
+    padding: 1.5rem;
+    color: white;
+  }
+  .page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .user-name {
+    background-color: rgb(22, 22, 22);
+    padding: 1.2rem 1rem;
+    border: 1px solid gray;
+    width: 100%;
+ 
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  .user-name::placeholder {
+    color: rgb(189, 188, 188);
+    font-size: 1rem;
+  }
+  .signin-button {
+    background-color: red;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .txt {
+    margin: 1rem 0;
+    text-align: center;
+    color: rgb(189, 188, 188);;
+  }
+  .signin-code-button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(49, 48, 48);
+    cursor: pointer;
+  }
+  .link-contain {
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+  .link:hover {
+    text-decoration: underline;
+    color: rgb(179, 176, 176);
+  }
+  .check-box {
+    background-color: gray;
+    margin-right: .5rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer {
+    margin-top: 2rem;
+    color: rgb(167, 165, 165);
+    font-size: 13px;
+  }
+  
+  footer {
+    border-top: 1px solid rgb(101, 101, 101);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 4rem;
+    color: rgb(200, 200, 200);
+    padding: 2rem 1.5rem;
+  }
+  .enquiry {
+    margin-bottom: 1rem;
+  }
+  .enquiry a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+  }
+
+  .footer-links {
+    color: rgb(201, 201, 201);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .link {
+    padding: .8rem 0;
+    font-size: 14px;
+  }
+  .link a {
+    color: rgb(201, 201, 201);
+  }
+
+  select {
+    background-color: rgba(29, 29, 29, 0.7);
+    color: white;
+    font-size: 1rem;
+    padding: .3rem 1.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  option {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (min-width:600px) {
+  .main {
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+  }
+  .page-container {
+    backdrop-filter: brightness(50%);
+  }
+  header {
+    display: flex;
+    margin-left: 8rem;
+    margin-top: -1rem;
+  }
+  .header-logo {
+    width: 12rem;
+  }
+  .container {
+    width: 30rem;
+    padding: 3.5rem 4rem 10rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .user-name {
+    background-color: rgb(22, 22, 22);
+    padding: 1.2rem 1rem;
+    border: 1px solid gray;
+    width: 100%;
+ 
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  .user-name::placeholder {
+    color: rgb(189, 188, 188);
+    font-size: 1rem;
+  }
+  .signin-button {
+    background-color: red;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .txt {
+    margin: 1rem 0;
+    text-align: center;
+    color: rgb(189, 188, 188);;
+  }
+  .signin-code-button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(49, 48, 48);
+    cursor: pointer;
+  }
+  .link-contain {
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+  .link:hover {
+    text-decoration: underline;
+    color: rgb(179, 176, 176);
+  }
+  .check-box {
+    background-color: gray;
+    margin-right: .5rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer {
+    margin-top: 2rem;
+    color: rgb(167, 165, 165);
+    font-size: 14px;
+  }
+  
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 4rem;
+  color: rgb(200, 200, 200);;
+  padding: 5rem 11rem;
+}
+.enquiry {
+  margin-bottom: 1rem;
+}
+.enquiry a {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+}
+
+.footer-links {
+  color: rgb(201, 201, 201);
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.link {
+  padding: .8rem 0;
+  font-size: 14px;
+}
+.link a {
+  color: rgb(201, 201, 201);
+}
+
+select {
+  background-color: rgba(29, 29, 29, 0.7);
+  color: white;
+  font-size: 1rem;
+  padding: .3rem 1.5rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+option {
+  background-color: white;
+  color: black;
+}
+}
+@media screen and (min-width:600px) and (max-width:960px) {
+  header {
+    display: flex;
+  }
+  .header-logo {
+    width: 7rem;
+  }
+  header {
+    display: flex;
+    margin-left: 1.5rem;
+    padding: 1rem;
+  }
+  footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 4rem;
+    color: rgb(200, 200, 200);
+    padding: 2rem 1.5rem 2rem;
+  }
+  .enquiry {
+    margin-bottom: .8rem;
+  }
+  .enquiry a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+  }
+  
+  .footer-links {
+    color: rgb(201, 201, 201);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .link {
+    padding: .8rem 0;
+    font-size: 14px;
+  }
+  .link a {
+    color: rgb(201, 201, 201);
+  }  
+}
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+  footer {
+    padding: 5rem 2rem;
+  }
+}
+.new-signup {
+  color: rgb(167, 165, 165);
+}
+.new-signup-link {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
+.new-signup-link:hover ,.footer a:hover {
+  text-decoration: underline;
+}
+.footer a {
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: hsl(216, 100%, 50%);
+  opacity: 1;
+}
